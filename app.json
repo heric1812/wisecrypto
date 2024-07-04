@@ -2,6 +2,7 @@
   "expo": {
     "name": "wisecrypto",
     "slug": "wisecrypto",
+    "scheme": "wisecrypto",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +23,24 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Inter/Inter-Light.ttf",
+            "./assets/fonts/Inter/Inter-Medium.ttf",
+            "./assets/fonts/Inter/Inter-SemiBold.ttf",
+            "./assets/fonts/Inter/Inter-Bold.ttf"
+          ]
+        }
+      ],
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
